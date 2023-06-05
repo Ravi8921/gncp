@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Enquiry Form</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+     body {
+      margin: 20px;
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 500px;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .form-group {
+      margin-bottom: 30px;
+    }
+
+    .form-label {
+      font-weight: bold;
+    }
+
+    .form-control {
+      border-radius: 5px;
+    }
+
+    select.form-control {
+      height: 40px;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+
+    .btn-primary:hover {
+      background-color: #0069d9;
+      border-color: #0069d9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Enquiry Form</h2>
+    <form>
+      <div class="form-group">
+        <label class="form-label" for="fullName">Full Name</label>
+        <input type="text" class="form-control" id="fullName" name="fullName" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="contactNo">Contact Number</label>
+        <input type="text" class="form-control" id="contactNo" name="contactNo" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="email">Email</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="subject">Subject</label>
+        <select class="form-control" id="subject" name="subject" required>
+          <option value="">Select</option>
+          <optgroup label="Paramedical-Degree">
+            <option value="Bachelor of Physiotherapy">Bachelor of Physiotherapy</option>
+            <option value="Bachelor of Hospital Management">Bachelor of Hospital Management</option>
+            <option value="Bachelor of Occupational Therapy">Bachelor of Occupational Therapy</option>
+            <option value="Bachelor of Medical Laboratory Technology">Bachelor of Medical Laboratory Technology</option>
+            <option value="Bachelor of Operation Theater Technology">Bachelor of Operation Theater Technology</option>
+            <option value="Bachelor of Radio Imaging Technology">Bachelor of Radio Imaging Technology</option>
+          </optgroup>
+          <optgroup label="Paramedical-Diploma">
+            <option value="Diploma in Medical Laboratory Technology (DMLT)">Diploma in Medical Laboratory Technology (DMLT)</option>
+            <option value="Diploma in Medical Radiography (X-Ray)">Diploma in Medical Radiography (X-Ray)</option>
+            <option value="Diploma of Operation Theater Technology (DOTT)">Diploma of Operation Theater Technology (DOTT)</option>
+          </optgroup>
+          <optgroup label="Certificate Course">
+            <option value="Certificate in Medical Dressing">Certificate in Medical Dressing</option>
+          </optgroup>
+          <optgroup label="Nursing">
+            <option value="Auxiliary Nurse and Midwife (ANM)">Auxiliary Nurse and Midwife (ANM)</option>
+            <option value="General Nursing and Midwifery (GNM)">General Nursing and Midwifery (GNM)</option>
+            <option value="B.SC. Nursing">B.SC. Nursing</option>
+          </optgroup>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="message">Message</label>
+        <textarea class="form-control" id="message" name="message" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

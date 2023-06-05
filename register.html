@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admission Form</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+     body {
+      margin: 20px;
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 800px;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .form-group {
+      margin-bottom: 30px;
+    }
+
+    .form-label {
+      font-weight: bold;
+    }
+
+    .form-control {
+      border-radius: 5px;
+    }
+
+    select.form-control {
+      height: 40px;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+
+    .btn-primary:hover {
+      background-color: #0069d9;
+      border-color: #0069d9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Admission Form</h2>
+    <form>
+      <div class="form-group">
+        <label class="form-label" for="courseName">Course/Degree Name</label>
+        <input type="text" class="form-control" id="courseName" name="courseName" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="admissionYear">Admission Year</label>
+        <input type="text" class="form-control" id="admissionYear" name="admissionYear" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="migrationCertNo">Migration Certificate Number</label>
+        <input type="text" class="form-control" id="migrationCertNo" name="migrationCertNo" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="migrationDates">Migration Dates</label>
+        <textarea class="form-control" id="migrationDates" name="migrationDates" required></textarea>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="photo">Photo</label>
+        <input type="file" class="form-control-file" id="photo" name="photo" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="collegeRollNo">College Roll Number</label>
+        <input type="text" class="form-control" id="collegeRollNo" name="collegeRollNo" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="studentNameEnglish">Student Name (English)</label>
+        <input type="text" class="form-control" id="studentNameEnglish" name="studentNameEnglish" required>
+      </div>
+      
+      <div class="form-group">
+        <label class="form-label" for="fatherName">Father's Name</label>
+        <input type="text" class="form-control" id="fatherName" name="fatherName" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="motherName">Mother's Name</label>
+        <input type="text" class="form-control" id="motherName" name="motherName" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="dob">Date of Birth</label>
+        <input type="date" class="form-control" id="dob" name="dob" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="gender">Gender</label>
+        <select class="form-control" id="gender" name="gender" required>
+          <option value="">Select</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="category">Category</label>
+        <select class="form-control" id="category" name="category" required>
+          <option value="">OBC</option>
+          <option value="bc">BC</option>
+          <option value="sc">SC</option>
+          <option value="st">ST</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="isPhysicallyHandicapped">Is Physically Handicapped?</label>
+        <select class="form-control" id="isPhysicallyHandicapped" name="isPhysicallyHandicapped" required>
+          <option value="">Select</option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="ruralUrban">Rural/Urban</label>
+        <input type="text" class="form-control" id="ruralUrban" name="ruralUrban" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="nationality">Nationality</label>
+        <input type="text" class="form-control" id="nationality" name="nationality" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="permanentAddress">Permanent Address</label>
+        <textarea class="form-control" id="permanentAddress" name="permanentAddress" required></textarea>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="district">District</label>
+        <input type="text" class="form-control" id="district" name="district" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="block">Block</label>
+        <input type="text" class="form-control" id="block" name="block" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="cityVillage">City/Village</label>
+        <input type="text" class="form-control" id="cityVillage" name="cityVillage" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="pinCode">Pin Code</label>
+        <input type="text" class="form-control" id="pinCode" name="pinCode" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="studentMobileNo">Student's Mobile Number</label>
+        <input type="text" class="form-control" id="studentMobileNo" name="studentMobileNo" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="guardianMobileNo">Guardian's Mobile Number</label>
+        <input type="text" class="form-control" id="guardianMobileNo" name="guardianMobileNo" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="email">Email</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="aadharNo">Aadhar Number</label>
+        <input type="text" class="form-control" id="aadharNo" name="aadharNo" required>
+      </div>
+      
+     
+      <div class="form-group">
+        <label class="form-label" for="qualification">Qualification</label>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Qualification</th>
+              <th>Passing Year</th>
+              <th>Percentage</th>
+              <th>Board</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>10th</td>
+              <td><input type="text" class="form-control" name="passingYear10" required></td>
+              <td><input type="text" class="form-control" name="percentage10" required></td>
+              <td><input type="text" class="form-control" name="board10" required></td>
+            </tr>
+            <tr>
+              <td>12th</td>
+              <td><input type="text" class="form-control" name="passingYear12" required></td>
+              <td><input type="text" class="form-control" name="percentage12" required></td>
+              <td><input type="text" class="form-control" name="board12" required></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+     
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
